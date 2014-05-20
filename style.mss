@@ -46,7 +46,7 @@
 
  
 Map {
-  background-color: @water;
+  background-image: url(obstruction2.png);
 }
 
 
@@ -56,8 +56,8 @@ Map {
 }
 
 #ocean {
-  polygon-fill:@water;
   polygon-opacity:1;
+  polygon-pattern-file:url(watertexter.svg);
 }
 
 #coastlines {
@@ -67,13 +67,13 @@ Map {
 
 
 #buildings { 
-  [zoom > 13] {
+  [zoom > 14] {
   polygon-opacity:1;
   polygon-fill:@building_fill;
   line-color:@building_outline;
   line-width:0.5;
 }
-  [zoom > 15] {
+  [zoom > 16] {
   line-color:@building_outline;
   line-width:0.75;
   }
@@ -140,3 +140,24 @@ Map {
 
 
 
+#neighborhoods [zoom > 12] {
+  text-name:'[Name]';
+  text-face-name:@futura_med;
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:8;
+  text-fill:black;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+}
+
+#neighborhoods  [zoom > 14] {
+  text-name:'[Name]';
+  text-face-name:@futura_bold;
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:10;
+  text-fill:black;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+}

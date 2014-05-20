@@ -138,6 +138,24 @@
       "name": "roads"
     },
     {
+      "geometry": "linestring",
+      "extent": [
+        -74.36,
+        40.48003,
+        -73.67001,
+        40.95999
+      ],
+      "id": "roadlabels",
+      "class": "",
+      "Datasource": {
+        "file": "layers/roadlabels/roads.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "roadlabels"
+    },
+    {
       "geometry": "polygon",
       "extent": [
         -74.25554696678374,
@@ -156,22 +174,25 @@
       "name": "boronames"
     },
     {
-      "geometry": "linestring",
+      "geometry": "point",
       "extent": [
-        -74.36,
-        40.48003,
-        -73.67001,
-        40.95999
+        -74.24656934235286,
+        40.50533376115643,
+        -73.7081161540336,
+        40.90821336226078
       ],
-      "id": "roadlabels",
+      "id": "neighborhoods",
       "class": "",
       "Datasource": {
-        "file": "layers/roadlabels/roads.shp"
+        "file": "layers/neighborhoods/NHoodNameCentroids.shp",
+        "id": "neighborhoods",
+        "project": "rentchecknyc",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "roadlabels"
+      "name": "neighborhoods"
     }
   ],
   "scale": 1,
