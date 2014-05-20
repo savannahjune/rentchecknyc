@@ -1,0 +1,182 @@
+{
+  "bounds": [
+    -74.3555,
+    40.4762,
+    -73.6661,
+    40.9612
+  ],
+  "center": [
+    -73.9861,
+    40.7545,
+    10
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 10,
+  "maxzoom": 17,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "labels.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -124.76277923583979,
+        24.520416259765852,
+        -66.94889068603516,
+        49.38329696655268
+      ],
+      "id": "states",
+      "class": "",
+      "Datasource": {
+        "file": "layers/states/USA_adm1.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "states"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.9999999999999,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "ocean",
+      "class": "",
+      "Datasource": {
+        "file": "layers/ocean/ne_10m_ocean.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "ocean"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -74.25554696678374,
+        40.496096946231084,
+        -73.69921518365672,
+        40.915175850592576
+      ],
+      "id": "coastlines",
+      "class": "",
+      "Datasource": {
+        "file": "layers/coastlines/nybb.shp",
+        "id": "coastlines",
+        "project": "rentchecknyc",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "coastlines"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -74.35999,
+        40.48002,
+        -73.67323,
+        40.95998
+      ],
+      "id": "parks",
+      "class": "",
+      "Datasource": {
+        "file": "layers/parks/natural.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "parks"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -74.36,
+        40.48023,
+        -73.6716,
+        40.95999
+      ],
+      "id": "buildings",
+      "class": "",
+      "Datasource": {
+        "file": "layers/buildings/buildings.shp",
+        "id": "buildings",
+        "project": "rentchecknyc",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "buildings"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -74.36,
+        40.48003,
+        -73.67001,
+        40.95999
+      ],
+      "id": "roads",
+      "class": "",
+      "Datasource": {
+        "file": "layers/roads/roads.shp",
+        "id": "roads",
+        "project": "rentchecknyc",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "roads"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -74.25554696678374,
+        40.496096946231084,
+        -73.69921518365672,
+        40.915175850592576
+      ],
+      "id": "boronames",
+      "class": "",
+      "Datasource": {
+        "file": "layers/boronames/nybb.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "boronames"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -74.36,
+        40.48003,
+        -73.67001,
+        40.95999
+      ],
+      "id": "roadlabels",
+      "class": "",
+      "Datasource": {
+        "file": "layers/roadlabels/roads.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "roadlabels"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "RentCheckNYC",
+  "description": "",
+  "attribution": ""
+}
