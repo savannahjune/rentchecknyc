@@ -6,7 +6,7 @@
 
 @parks: #8dbd75;
 
-@motorway_line:     #5949A3;
+@motorway_line:     #ce5041;
 //#E65C5C; 
 @motorway_fill:     lighten(@motorway_line,10%);
 @motorway_case:     @motorway_line * 0.9;
@@ -46,7 +46,8 @@
 
  
 Map {
-  background-image: url(obstruction2.png);
+  background-image: url(watertexture5.png);
+  //background-color:@water; 
 }
 
 
@@ -56,8 +57,8 @@ Map {
 }
 
 #ocean {
-  polygon-opacity:1;
-  polygon-pattern-file:url(watertexter.svg);
+  polygon-pattern-file: url(watertexture5.png);
+  //polygon-fill:@water;
 }
 
 #coastlines {
@@ -84,26 +85,32 @@ Map {
   polygon-fill:@parks;
 }
 
-#roads [zoom>=9] 
+#roads [zoom>=11] 
 {
   [type='motorway'] {
    line-color: @motorway_line;
   }
   [type='motorway_link'] {
-    line-color: @motorway_line;
-  }
+    line-color: @motorway_line;}
+} 
+  
+#roads [zoom >= 12] {    
   [type='trunk'] {
     line-color: @trunk_line;
   }
   [type='trunk_link'] {
     line-color: @trunk_line;
   }
+}
+
+#roads [zoom >= 13] {
   [type='primary'] { line-color: @primary_line; line-width: 2.5; }
   [type='secondary'] { line-color: @secondary_line; line-width: 2}
   [type='tertiary'] { line-color: @standard_line; line-width: 1 }
 }
 
-#roads [zoom>=13]
+
+#roads [zoom>=14]
 {
   [type="residential"],
     [type="unclassified"],
@@ -145,7 +152,7 @@ Map {
   text-face-name:@futura_med;
   text-character-spacing:2;
   text-transform:uppercase;
-  text-size:8;
+  text-size:10;
   text-fill:black;
   text-halo-fill:rgba(255,255,255,01);
   text-halo-radius: 3;
