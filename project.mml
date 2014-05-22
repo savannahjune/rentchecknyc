@@ -23,38 +23,20 @@
     {
       "geometry": "polygon",
       "extent": [
-        -124.76277923583979,
-        24.520416259765852,
-        -66.94889068603516,
-        49.38329696655268
+        -74.70134781197254,
+        40.29593226000012,
+        -72.89865361556569,
+        41.65684306882418
       ],
       "id": "states",
       "class": "",
       "Datasource": {
-        "file": "layers/states/USA_adm1.shp"
+        "file": "layers/states/new-york.shp"
       },
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
       "name": "states"
-    },
-    {
-      "geometry": "polygon",
-      "extent": [
-        -179.9999999999999,
-        -85.051,
-        180,
-        85.051
-      ],
-      "id": "ocean",
-      "class": "",
-      "Datasource": {
-        "file": "layers/ocean/ne_10m_ocean.shp"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "ocean"
     },
     {
       "geometry": "polygon",
@@ -156,24 +138,6 @@
       "name": "roadlabels"
     },
     {
-      "geometry": "polygon",
-      "extent": [
-        -74.25554696678374,
-        40.496096946231084,
-        -73.69921518365672,
-        40.915175850592576
-      ],
-      "id": "boronames",
-      "class": "",
-      "Datasource": {
-        "file": "layers/boronames/nybb.shp"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "boronames"
-    },
-    {
       "geometry": "point",
       "extent": [
         -74.24656934235286,
@@ -193,6 +157,27 @@
       "srs": "",
       "advanced": {},
       "name": "neighborhoods"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -74.25554696678374,
+        40.496096946231084,
+        -73.69921518365672,
+        40.915175850592576
+      ],
+      "id": "boronames",
+      "class": "",
+      "Datasource": {
+        "file": "layers/boronames/nybb.shp",
+        "id": "boronames",
+        "project": "rentchecknyc",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "boronames"
     }
   ],
   "scale": 1,
