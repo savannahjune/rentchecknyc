@@ -6,7 +6,7 @@
   
 @parks: #8dbd75;   
   
-@motorway_line:     #ce5041; 
+@motorway_line:     #ce5041;    
 //#E65C5C; 
 @motorway_fill:     lighten(@motorway_line,10%);
 @motorway_case:     @motorway_line * 0.9;
@@ -16,18 +16,18 @@
 @trunk_case:        @trunk_line * 0.9;
 
 @primary_line:      #ffb900;
-//#FFB000  
+//#FFB000   
 @primary_fill:      lighten(@primary_line,10%);
 @primary_case:      @primary_line * 0.9;
 
-@secondary_line:    #FFE873;
+@secondary_line:    #FFE873; 
 @secondary_fill:    lighten(@secondary_line,10%);
 @secondary_case:    @secondary_line * 0.9;
   
 @standard_line:     @land * 0.85;
 @standard_fill:     #fff;
 @standard_case:     @land * 0.9;
-
+   
 @pedestrian_line:   @standard_line;
 @pedestrian_fill:   #FAFAF5;
 @pedestrian_case:   @land;
@@ -35,7 +35,7 @@
 @cycle_line:        @standard_line;
 @cycle_case:        @land;
 
-@rail_line:         #999;
+@rail_line:         #999; 
 @rail_fill:         #fff;
 @rail_case:         @land;
 
@@ -47,10 +47,10 @@
 
  
 Map {
-  background-image: url(concretewaterblue.png);
+  background-image: url(whoooooooaaahh-dark.png);
   //background-color:@water; 
 }
-
+ 
 
 #states {
   polygon-opacity:1;
@@ -183,3 +183,4 @@ Map {
   text-halo-fill:rgba(255,255,255,01);
   text-halo-radius: 3;
 }
+

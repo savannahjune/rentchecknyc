@@ -70,7 +70,7 @@
    text-size:8;
    text-fill:black;
    text-halo-fill:rgba(255,255,255,01);
-   text-halo-radius: 3;
+   text-halo-radius: 3; 
    text-placement:line;
    text-min-distance: 1000px;
   }
@@ -98,5 +98,19 @@
    text-placement:line;
    text-min-distance: 1000px;
   }
+} 
+
+#subway [zoom > 14] {
+  marker-width: 10;
+  marker-file: url(rail-24.svg);
+  marker-allow-overlap:false;
 }
 
+
+
+#museums [zoom > 14] {
+  marker-width: 14;
+  marker-fill: #401E03;
+  marker-file: url(museum-24.svg);
+  marker-allow-overlap:false;
+}
