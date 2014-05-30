@@ -1,13 +1,13 @@
 
 @water: #b8dee6;
 @land: #fafaf0;
-@building_outline: #757575;
+@building_outline: #c4c2c2;
 @building_fill:#dadada;
   
-@parks: #8dbd75;   
+@parks: #8dbd75;     
   
 @motorway_line:     #ce5041;    
-//#E65C5C; 
+//#a51414; 
 @motorway_fill:     lighten(@motorway_line,10%);
 @motorway_case:     @motorway_line * 0.9;
 
@@ -15,7 +15,7 @@
 @trunk_fill:        lighten(@trunk_line,10%);
 @trunk_case:        @trunk_line * 0.9;
 
-@primary_line:      #ffb900;
+@primary_line:      #f9d983;
 //#FFB000   
 @primary_fill:      lighten(@primary_line,10%);
 @primary_case:      @primary_line * 0.9;
@@ -46,9 +46,8 @@
 @avenir: "avenir_roman",Arial,sans-serif;
 
  
-Map {
-  background-image: url(whoooooooaaahh-dark.png);
-  //background-color:@water; 
+Map { 
+  background-image: url(dotslight.png);
 }
  
 
@@ -57,11 +56,9 @@ Map {
   polygon-fill:@land;
 }
 
-#coastlines {
-  polygon-opacity:1;
-  polygon-fill:@land;
+#water {
+    polygon-pattern-file: url(dotslight.png);
 }
-
 
 #buildings { 
   [zoom > 14] {
@@ -103,7 +100,7 @@ Map {
     line-width: 2.5; }
 }
 
-#roads [zoom>=14]
+#roads [zoom>=13]
 {
     [type='secondary'] { line-color: @primary_line; line-width: 2}
     [type='tertiary'] { line-color: @primary_line; line-width: 1 }
@@ -118,7 +115,7 @@ Map {
     }
 }
 
-#roads[zoom>14]
+#roads[zoom>13]
 {
     [type="cycleway"],
     [type="footway"],
@@ -128,59 +125,3 @@ Map {
     	line-color: @primary_line; line-width: 1;
     }
 }
-
-#boronames  [zoom < 13] {
-    text-name:"[BoroName]";
-    text-face-name:@futura_med;
-    text-character-spacing:2;
-    text-transform:uppercase;
-    text-size:25;
-	text-fill:black;
-  	text-halo-fill:rgba(255,255,255,0.5);
-  	text-halo-radius: 2;
-  	[zoom >= 12] { [BoroName = 'Staten Island'] {
-    text-dx:10;
-    text-dy:-130; 
-  }
- }
-}
-
-
-
-#neighborhoods [zoom > 12] {
-  [Stacked = 1] {
-  text-name:'[Name]';
-  text-face-name:@futura_bold;
-  text-character-spacing:2;
-  text-transform:uppercase;
-  text-size:12;
-  text-fill:#E65C5C;
-  text-halo-fill:rgba(255,255,255,01);
-  text-halo-radius: 3;
-   }
-}
-
-#neighborhoods [zoom > 13] {
-  [Stacked <=  2] {
-  text-name:'[Name]';
-  text-face-name:@futura_bold;
-  text-character-spacing:2;
-  text-transform:uppercase;
-  text-size:12;
-  text-fill:#E65C5C;
-  text-halo-fill:rgba(255,255,255,01);
-  text-halo-radius: 3;
-   }
-}
-
-#neighborhoods  [zoom > 14] {
-  text-name:'[Name]';
-  text-face-name:@futura_bold;
-  text-character-spacing:2;
-  text-transform:uppercase;
-  text-size:14;
-  text-fill:#E65C5C;
-  text-halo-fill:rgba(255,255,255,01);
-  text-halo-radius: 3;
-}
-

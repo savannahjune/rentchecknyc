@@ -6,20 +6,41 @@
     40.9612
   ],
   "center": [
-    -73.9861,
-    40.7545,
-    10
+    -73.9905,
+    40.7483,
+    13
   ],
   "format": "png",
   "interactivity": false,
-  "minzoom": 10,
-  "maxzoom": 17,
+  "minzoom": 13,
+  "maxzoom": 18,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss",
     "labels.mss"
   ],
   "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -74.22440023930837,
+        40.499559368989026,
+        -73.44986624465093,
+        42.74714383574759
+      ],
+      "id": "water",
+      "class": "",
+      "Datasource": {
+        "file": "layers/water/noaa__dec_shore.shp",
+        "id": "water",
+        "project": "rentchecknyc",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "water"
+    },
     {
       "geometry": "polygon",
       "extent": [
@@ -37,27 +58,6 @@
       "srs": "",
       "advanced": {},
       "name": "states"
-    },
-    {
-      "geometry": "polygon",
-      "extent": [
-        -74.25554696678374,
-        40.496096946231084,
-        -73.69921518365672,
-        40.915175850592576
-      ],
-      "id": "coastlines",
-      "class": "",
-      "Datasource": {
-        "file": "layers/coastlines/nybb.shp",
-        "id": "coastlines",
-        "project": "rentchecknyc",
-        "srs": ""
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "coastlines"
     },
     {
       "geometry": "polygon",
@@ -130,7 +130,10 @@
       "id": "roadlabels",
       "class": "",
       "Datasource": {
-        "file": "layers/roadlabels/roads.shp"
+        "file": "layers/roadlabels/roads.shp",
+        "id": "roadlabels",
+        "project": "rentchecknyc",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -178,50 +181,11 @@
       "srs": "",
       "advanced": {},
       "name": "boronames"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        -74.25283251834041,
-        40.51211404323972,
-        -73.75306813385588,
-        40.9034111625907
-      ],
-      "id": "subway",
-      "class": "",
-      "Datasource": {
-        "file": "layers/subway/DOITT_SUBWAY_ENTRANCE_01_13SEPT2010.shp",
-        "id": "subway",
-        "project": "rentchecknyc",
-        "srs": ""
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "subway"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        -74.21641927462065,
-        40.51518071664282,
-        -73.72510933510264,
-        40.89759157124532
-      ],
-      "id": "museums",
-      "class": "",
-      "Datasource": {
-        "file": "layers/museums/DOITT_MUSEUM_01_13SEPT2010.shp"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "museums"
     }
   ],
   "scale": 1,
   "metatile": 2,
-  "name": "RentCheckNYC",
+  "name": "RentCheckNYCFresh",
   "description": "",
   "attribution": ""
 }
