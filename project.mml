@@ -70,7 +70,10 @@
       "id": "parks",
       "class": "",
       "Datasource": {
-        "file": "layers/parks/natural.shp"
+        "file": "layers/parks/natural.shp",
+        "id": "parks",
+        "project": "rentchecknycfresh",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -111,7 +114,7 @@
       "Datasource": {
         "file": "layers/roads/roads.shp",
         "id": "roads",
-        "project": "rentchecknyc",
+        "project": "rentchecknycfresh",
         "srs": ""
       },
       "srs-name": "autodetect",
@@ -160,6 +163,42 @@
       "srs": "",
       "advanced": {},
       "name": "neighborhoods"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -74.045592,
+        40.688873,
+        -73.923261,
+        40.792417
+      ],
+      "id": "extraneighborhoods",
+      "class": "",
+      "Datasource": {
+        "file": "layers/extraneighborhoods/extraneighborhoods - Sheet1.csv"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "extraneighborhoods"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -74.24656934235286,
+        40.50533376115643,
+        -73.7081161540336,
+        40.90821336226078
+      ],
+      "id": "hellkitchen",
+      "class": "",
+      "Datasource": {
+        "file": "layers/hellkitchen/NHoodNameCentroids.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "hellkitchen"
     },
     {
       "geometry": "polygon",

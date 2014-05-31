@@ -8,7 +8,6 @@
 
 //Colors for map
 
-@water: #b8dee6;
 @land:  #f7f7d9;
 @building_outline: #c4c2c2;
 @building_fill:#dadada;
