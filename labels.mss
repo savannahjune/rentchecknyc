@@ -10,7 +10,7 @@
    text-face-name:@futura_med;
    text-character-spacing:2;
    //text-transform:uppercase;
-   text-size:16;
+   text-size:12;
    text-fill:#58503D;
    text-halo-fill:rgba(255,255,255,01);
    text-halo-radius: 2;
@@ -23,7 +23,7 @@
    text-face-name:@futura_med;
    text-character-spacing:2;
    //text-transform:uppercase;
-   text-size:17;
+   text-size:12;
    text-fill:#58503D;
    text-halo-fill:rgba(255,255,255,01);
    text-halo-radius: 2;
@@ -56,7 +56,7 @@
 //Neighborhood labels limits them to zoom levels greater than 12
 //determines the size and type of the font at certain zoom levels
 
-#neighborhoods [zoom > 12] {
+#neighborhoods [zoom > 12 ] {
   [Name = 'Battery Park City'],
   [Name = 'Chelsea'], 
   [Name = 'East Harlem'],
@@ -89,6 +89,39 @@
  }
 }
 
+#neighborhoods [zoom >= 16] {
+  [Name = 'Battery Park City'],
+  [Name = 'Chelsea'], 
+  [Name = 'East Harlem'],
+  [Name = 'East Village'],
+  [Name = 'Financial District'],
+  [Name = 'Gramercy'], 
+  [Name = "Central Harlem"],
+  [Name = "Hell’s Kitchen"],
+  [Name = "Lower East Side"],
+  [Name = "Midtown"],
+  [Name = "Morningside Heights"],
+  [Name = "Murray Hill"],
+  [Name = "Soho"],
+  [Name = "Stuyvesant Town"],
+  [Name = "Tribeca"],
+  [Name = "Upper East Side"],
+  [Name = "Upper West Side"],
+  [Name = "Washington Heights"],
+  [Name = "West Village"],
+  [Stacked = 1],
+{
+  text-name:'[Name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:40;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+ }
+}
+
 //made seperate layer for neighborhoods that
 //were improperly labeled in data
 
@@ -99,6 +132,19 @@
   text-character-spacing:2;
   text-transform:uppercase;
   text-size:16;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+}
+}
+
+#hellkitchen [zoom >= 16] {
+  [AnnoLine1 = "Kitchen"] {
+  text-name:'[Name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:20;
   text-fill:#a51414;
   text-halo-fill:rgba(255,255,255,01);
   text-halo-radius: 3;
@@ -133,9 +179,89 @@
 }
 }
 
+#extraneighborhoods [zoom >= 14] {
+  text-name:'[name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:16;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+}
+
+#hellkitchen [zoom >= 15] {  
+  [AnnoLine1 = "Kips"] {
+  text-name:'[Name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:16;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+  text-dx:-80;
+  text-dy:160; 
+}
+}
+
+//makes font bigger at zoom 16
+
+#extraneighborhoods [zoom >= 16] {
+  text-name:'[name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:40;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+}
+
+#hellkitchen [zoom >= 16] {  
+  [AnnoLine1 = "Kips"] {
+  text-name:'[Name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:40;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+  text-dx:-80;
+  text-dy:160; 
+}
+}
+
+#extraneighborhoods [zoom >= 16] {
+  text-name:'[name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:40;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+}
+
+#hellkitchen [zoom >= 16] {  
+  [AnnoLine1 = "Kips"] {
+  text-name:'[Name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:40;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+  text-dx:-80;
+  text-dy:160; 
+}
+}
+
 //adds in all of the neighborhoods at zoom 15 and greater
 
-#neighborhood [zoom >= 15] {
+#neighborhood [zoom = 15] {
   [Stacked >= 1] {
   text-name:'[Name]';
   text-face-name:"Bebas Neue Regular";
@@ -146,6 +272,20 @@
   text-halo-fill:rgba(255,255,255,01);
   text-halo-radius: 3;}
 }
+
+#neighborhood [zoom >= 16] {
+  [Stacked >= 1] {
+  text-name:'[Name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:40;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;}
+}
+
+
 
 //labeling for central park
 
@@ -158,6 +298,23 @@
   text-character-spacing:2;
   text-transform:uppercase;
   text-size:16;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+  text-dx:80;
+  text-dy:-160;
+    }
+}
+
+#parks [zoom >= 16] {
+  polygon-opacity:0.75;
+  polygon-fill:@parks;
+  [name = 'Central Park'] {
+  text-name:'[name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:40;
   text-fill:#a51414;
   text-halo-fill:rgba(255,255,255,01);
   text-halo-radius: 3;
