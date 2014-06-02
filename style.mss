@@ -50,6 +50,7 @@
 //Texture of water
 Map { 
   background-image: url(dotslight.png);
+  buffer-size: 256;
 }
  
 //Shape of states surrounding NYC

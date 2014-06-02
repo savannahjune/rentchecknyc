@@ -86,6 +86,41 @@
   text-fill:#a51414;
   text-halo-fill:rgba(255,255,255,01);
   text-halo-radius: 3;
+  text-allow-overlap: true;
+ }
+}
+
+#neighborhoods [zoom = 15 ] {
+  [Name = 'Battery Park City'],
+  [Name = 'Chelsea'], 
+  [Name = 'East Harlem'],
+  [Name = 'East Village'],
+  [Name = 'Financial District'],
+  [Name = 'Gramercy'], 
+  [Name = "Central Harlem"],
+  [Name = "Hell’s Kitchen"],
+  [Name = "Lower East Side"],
+  [Name = "Midtown"],
+  [Name = "Morningside Heights"],
+  [Name = "Murray Hill"],
+  [Name = "Soho"],
+  [Name = "Stuyvesant Town"],
+  [Name = "Tribeca"],
+  [Name = "Upper East Side"],
+  [Name = "Upper West Side"],
+  [Name = "Washington Heights"],
+  [Name = "West Village"],
+  [Stacked = 1],
+{
+  text-name:'[Name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:22;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+  text-allow-overlap: true;
  }
 }
 
@@ -119,6 +154,7 @@
   text-fill:#a51414;
   text-halo-fill:rgba(255,255,255,01);
   text-halo-radius: 3;
+  text-allow-overlap: true;
  }
 }
 
@@ -135,6 +171,21 @@
   text-fill:#a51414;
   text-halo-fill:rgba(255,255,255,01);
   text-halo-radius: 3;
+  text-allow-overlap: true;
+}
+}
+
+#hellkitchen [zoom = 15] {
+  [AnnoLine1 = "Kitchen"] {
+  text-name:'[Name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:22;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+  text-allow-overlap: true;
 }
 }
 
@@ -148,12 +199,46 @@
   text-fill:#a51414;
   text-halo-fill:rgba(255,255,255,01);
   text-halo-radius: 3;
+  text-allow-overlap: true;
 }
 }
+
+#hellkitchen [zoom = 15] {  
+  [AnnoLine1 = "Kips"] {
+  text-name:'[Name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:22;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+  text-dx:-80;
+  text-dy:160; 
+  text-allow-overlap: true;
+}
+}
+
+#hellkitchen [zoom >= 16] {  
+  [AnnoLine1 = "Kips"] {
+  text-name:'[Name]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:40;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+  text-dx:-80;
+  text-dy:160; 
+  text-allow-overlap: true;
+}
+}
+
 
 //neighborhood data missing from original file
 
-#extraneighborhoods [zoom >= 14] {
+#extraneighborhoods [zoom = 14] {
   text-name:'[name]';
   text-face-name:"Bebas Neue Regular";
   text-character-spacing:2;
@@ -162,75 +247,19 @@
   text-fill:#a51414;
   text-halo-fill:rgba(255,255,255,01);
   text-halo-radius: 3;
+  text-allow-overlap: true;
 }
 
-#hellkitchen [zoom >= 15] {  
-  [AnnoLine1 = "Kips"] {
-  text-name:'[Name]';
-  text-face-name:"Bebas Neue Regular";
-  text-character-spacing:2;
-  text-transform:uppercase;
-  text-size:16;
-  text-fill:#a51414;
-  text-halo-fill:rgba(255,255,255,01);
-  text-halo-radius: 3;
-  text-dx:-80;
-  text-dy:160; 
-}
-}
-
-#extraneighborhoods [zoom >= 14] {
+#extraneighborhoods [zoom = 15] {
   text-name:'[name]';
   text-face-name:"Bebas Neue Regular";
   text-character-spacing:2;
   text-transform:uppercase;
-  text-size:16;
+  text-size:22;
   text-fill:#a51414;
   text-halo-fill:rgba(255,255,255,01);
   text-halo-radius: 3;
-}
-
-#hellkitchen [zoom >= 15] {  
-  [AnnoLine1 = "Kips"] {
-  text-name:'[Name]';
-  text-face-name:"Bebas Neue Regular";
-  text-character-spacing:2;
-  text-transform:uppercase;
-  text-size:16;
-  text-fill:#a51414;
-  text-halo-fill:rgba(255,255,255,01);
-  text-halo-radius: 3;
-  text-dx:-80;
-  text-dy:160; 
-}
-}
-
-//makes font bigger at zoom 16
-
-#extraneighborhoods [zoom >= 16] {
-  text-name:'[name]';
-  text-face-name:"Bebas Neue Regular";
-  text-character-spacing:2;
-  text-transform:uppercase;
-  text-size:40;
-  text-fill:#a51414;
-  text-halo-fill:rgba(255,255,255,01);
-  text-halo-radius: 3;
-}
-
-#hellkitchen [zoom >= 16] {  
-  [AnnoLine1 = "Kips"] {
-  text-name:'[Name]';
-  text-face-name:"Bebas Neue Regular";
-  text-character-spacing:2;
-  text-transform:uppercase;
-  text-size:40;
-  text-fill:#a51414;
-  text-halo-fill:rgba(255,255,255,01);
-  text-halo-radius: 3;
-  text-dx:-80;
-  text-dy:160; 
-}
+  text-allow-overlap: true;
 }
 
 #extraneighborhoods [zoom >= 16] {
@@ -242,22 +271,10 @@
   text-fill:#a51414;
   text-halo-fill:rgba(255,255,255,01);
   text-halo-radius: 3;
+  text-allow-overlap: true;
 }
 
-#hellkitchen [zoom >= 16] {  
-  [AnnoLine1 = "Kips"] {
-  text-name:'[Name]';
-  text-face-name:"Bebas Neue Regular";
-  text-character-spacing:2;
-  text-transform:uppercase;
-  text-size:40;
-  text-fill:#a51414;
-  text-halo-fill:rgba(255,255,255,01);
-  text-halo-radius: 3;
-  text-dx:-80;
-  text-dy:160; 
-}
-}
+
 
 //adds in all of the neighborhoods at zoom 15 and greater
 
@@ -267,10 +284,11 @@
   text-face-name:"Bebas Neue Regular";
   text-character-spacing:2;
   text-transform:uppercase;
-  text-size:16;
+  text-size:22;
   text-fill:#a51414;
   text-halo-fill:rgba(255,255,255,01);
-  text-halo-radius: 3;}
+  text-halo-radius: 3;
+  text-allow-overlap: true;}
 }
 
 #neighborhood [zoom >= 16] {
@@ -282,14 +300,15 @@
   text-size:40;
   text-fill:#a51414;
   text-halo-fill:rgba(255,255,255,01);
-  text-halo-radius: 3;}
+  text-halo-radius: 3;
+  text-allow-overlap: true;}
 }
 
 
 
 //labeling for central park
 
-#parks [zoom >= 15] {
+#parks [zoom = 15] {
   polygon-opacity:0.75;
   polygon-fill:@parks;
   [name = 'Central Park'] {
@@ -297,12 +316,13 @@
   text-face-name:"Bebas Neue Regular";
   text-character-spacing:2;
   text-transform:uppercase;
-  text-size:16;
+  text-size:22;
   text-fill:#a51414;
   text-halo-fill:rgba(255,255,255,01);
   text-halo-radius: 3;
   text-dx:80;
   text-dy:-160;
+  text-allow-overlap: true;
     }
 }
 
@@ -320,6 +340,7 @@
   text-halo-radius: 3;
   text-dx:80;
   text-dy:-160;
+  text-allow-overlap: true;
     }
 }
 

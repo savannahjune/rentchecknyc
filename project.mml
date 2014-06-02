@@ -175,7 +175,10 @@
       "id": "extraneighborhoods",
       "class": "",
       "Datasource": {
-        "file": "layers/extraneighborhoods/extraneighborhoods - Sheet1.csv"
+        "file": "layers/extraneighborhoods/extraneighborhoods - Sheet1.csv",
+        "id": "extraneighborhoods",
+        "project": "rentchecknyc",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -224,7 +227,7 @@
   ],
   "scale": 1,
   "metatile": 5,
-  "name": "RentCheckNYCFresh",
+  "name": "RentCheckNYC",
   "description": "",
   "attribution": ""
 }
