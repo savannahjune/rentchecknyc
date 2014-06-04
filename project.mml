@@ -193,7 +193,7 @@
         -73.7081161540336,
         40.90821336226078
       ],
-      "id": "hellkitchen",
+      "id": "hellskitchen",
       "class": "",
       "Datasource": {
         "file": "layers/hellkitchen/NHoodNameCentroids.shp"
@@ -201,7 +201,7 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "hellkitchen"
+      "name": "hellskitchen"
     },
     {
       "geometry": "polygon",

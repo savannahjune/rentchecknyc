@@ -158,52 +158,12 @@
  }
 }
 
+
+
 //made seperate layer for neighborhoods that
 //were improperly labeled in data
 
-#hellkitchen [zoom > 12] {
-  [AnnoLine1 = "Kitchen"] {
-  text-name:'[Name]';
-  text-face-name:"Bebas Neue Regular";
-  text-character-spacing:2;
-  text-transform:uppercase;
-  text-size:16;
-  text-fill:#a51414;
-  text-halo-fill:rgba(255,255,255,01);
-  text-halo-radius: 3;
-  text-allow-overlap: true;
-}
-}
-
-#hellkitchen [zoom = 15] {
-  [AnnoLine1 = "Kitchen"] {
-  text-name:'[Name]';
-  text-face-name:"Bebas Neue Regular";
-  text-character-spacing:2;
-  text-transform:uppercase;
-  text-size:22;
-  text-fill:#a51414;
-  text-halo-fill:rgba(255,255,255,01);
-  text-halo-radius: 3;
-  text-allow-overlap: true;
-}
-}
-
-#hellkitchen [zoom >= 16] {
-  [AnnoLine1 = "Kitchen"] {
-  text-name:'[Name]';
-  text-face-name:"Bebas Neue Regular";
-  text-character-spacing:2;
-  text-transform:uppercase;
-  text-size:20;
-  text-fill:#a51414;
-  text-halo-fill:rgba(255,255,255,01);
-  text-halo-radius: 3;
-  text-allow-overlap: true;
-}
-}
-
-#hellkitchen [zoom = 15] {  
+#hellskitchen [zoom = 15] {  
   [AnnoLine1 = "Kips"] {
   text-name:'[Name]';
   text-face-name:"Bebas Neue Regular";
@@ -219,7 +179,7 @@
 }
 }
 
-#hellkitchen [zoom >= 16] {  
+#hellskitchen [zoom >= 16] {  
   [AnnoLine1 = "Kips"] {
   text-name:'[Name]';
   text-face-name:"Bebas Neue Regular";
