@@ -265,6 +265,41 @@
 }
 
 
+#neighborhoodsnew [zoom > 12] ['Shape_Area' > 32777419] {
+  text-name:'[NTAName]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:20;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+  //text-allow-overlap: true;
+}
+
+#neighborhoodsnew [zoom > 13] ['Shape_Area' > 4777419] {
+  text-name:'[NTAName]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:18;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+  //text-allow-overlap: true;
+}
+
+#neighborhoodsnew [zoom > 14] {
+  text-name:'[NTAName]';
+  text-face-name:"Bebas Neue Regular";
+  text-character-spacing:2;
+  text-transform:uppercase;
+  text-size:18;
+  text-fill:#a51414;
+  text-halo-fill:rgba(255,255,255,01);
+  text-halo-radius: 3;
+  //text-allow-overlap: true;
+}
 
 //labeling for central park
 

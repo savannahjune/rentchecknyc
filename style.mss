@@ -6,14 +6,14 @@
 @futura_italic: "Futura Medium Italic","Function Pro Medium Italic","Ubuntu Italic","Trebuchet MS Italic","DejaVu Sans Oblique";
 @futura_bold: "Futura Bold","Function Pro Bold","Ubuntu Bold";
 
-//Colors for map
+//Colors for map 
 
 @land:  #f7f7d9;
 @building_outline: #c4c2c2;
 @building_fill:#dadada;
   
-@parks: #8dbd75;     
-  
+@parks: #8dbd75;       
+   
 //Roadway colors and opacity
 
 @motorway_line:     #ce5041;    
@@ -136,3 +136,4 @@ Map {
     	line-color: @primary_line; line-width: 1;
     }
 }
+

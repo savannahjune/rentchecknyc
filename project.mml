@@ -1,9 +1,9 @@
 {
   "bounds": [
-    -74.3555,
-    40.4762,
-    -73.6661,
-    40.9612
+    -74.0506,
+    40.6806,
+    -73.8968,
+    40.8107
   ],
   "center": [
     -73.9892,
@@ -12,8 +12,8 @@
   ],
   "format": "png",
   "interactivity": false,
-  "minzoom": 13,
-  "maxzoom": 18,
+  "minzoom": 11,
+  "maxzoom": 17,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss",
@@ -135,7 +135,7 @@
       "Datasource": {
         "file": "layers/roadlabels/roads.shp",
         "id": "roadlabels",
-        "project": "rentchecknycfresh",
+        "project": "rentchecknyc",
         "srs": ""
       },
       "srs-name": "autodetect",
@@ -156,7 +156,7 @@
       "Datasource": {
         "file": "layers/neighborhoods/NHoodNameCentroids.shp",
         "id": "neighborhoods",
-        "project": "rentchecknycfresh",
+        "project": "rentchecknyc",
         "srs": ""
       },
       "srs-name": "autodetect",
@@ -183,7 +183,30 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "extraneighborhoods"
+      "name": "extraneighborhoods",
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -74.2555469661254,
+        40.49609694623167,
+        -73.69921518303879,
+        40.9151758515961
+      ],
+      "id": "neighborhoodsnew",
+      "class": "",
+      "Datasource": {
+        "file": "layers/neighborhoodsnew/nynta.shp",
+        "id": "neighborhoodsnew",
+        "project": "rentchecknyc",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "neighborhoodsnew",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -196,7 +219,10 @@
       "id": "hellskitchen",
       "class": "",
       "Datasource": {
-        "file": "layers/hellkitchen/NHoodNameCentroids.shp"
+        "file": "layers/hellkitchen/NHoodNameCentroids.shp",
+        "id": "hellskitchen",
+        "project": "rentchecknyc",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -226,7 +252,7 @@
     }
   ],
   "scale": 1,
-  "metatile": 5,
+  "metatile": 15,
   "name": "RentCheckNYC",
   "description": "",
   "attribution": ""
